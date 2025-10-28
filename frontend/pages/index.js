@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 import axios from "axios";
 import TablePreview from "../components/TablePreview";
 
-const API_URL = process.env.NEXT_PUBLIC_API_BASE || "http://127.0.0.1:8000/api";
+const API_URL = "https://sqlwebapp.onrender.com/api" || "http://127.0.0.1:8000/api";
 
 export default function Home() {
   const router = useRouter();
