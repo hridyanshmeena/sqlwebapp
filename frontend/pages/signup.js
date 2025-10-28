@@ -12,7 +12,7 @@ export default function Signup() {
     e.preventDefault();
     setMsg("Signing up...");
     try {
-      const res = await fetch("${process.env.NEXT_PUBLIC_API_BASE}/signup", {
+      const res = await fetch("https://sqlwebapp.onrender.com/api/signup", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ username, password }),
